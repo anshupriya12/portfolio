@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js one-page-layout" data-click-ripple-animation="yes">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Anshu Priya - AI/ML Engineer and DSA enthusiast. Portfolio of machine learning, deep learning and full-stack projects.">
+    <meta name="keywords" content="Anshu Priya, AI, machine learning, deep learning, data structures, algorithms, portfolio">
+    <meta name="author" content="Anshu Priya">
+    <meta name="theme-color" content="#F4F0EB" />
+
+    <title>Anshu Priya | AI/ML Engineer</title>
+
+    <!-- FAV and TOUCH ICONS -->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="js/jquery.magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts/fontello/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/768.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css?v=20261015c">
+
+    <!-- INITIAL SCRIPTS -->
+    <script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <a class="skip-link" href="#/about">Skip to content</a>
+
+    <!-- Background drizzle (decorative, never intercepts clicks) -->
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <!-- .home-wrap -->
+    <div class="home-wrap">
+
+        <!-- .home-menu : section links (opened by the AJAX page loader in js/main.js) -->
+        <!-- hamburger: only displayed on narrow screens (see css/custom.css), controlled by js/mobile-nav.js -->
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-controls="home-menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="home-menu" id="home-menu" aria-label="Main">
+            <a href="about.html" data-slug="about"><span class="item-name">About</span></a>
+            <a href="projects.html" data-slug="projects"><span class="item-name">Projects</span></a>
+            <a href="skills.html" data-slug="skills"><span class="item-name">Skills</span></a>
+            <a href="achievements.html" data-slug="achievements"><span class="item-name">Achievements</span></a>
+            <a href="experience.html" data-slug="experience"><span class="item-name">Experience</span></a>
+            <a href="connect.html" data-slug="connect"><span class="item-name">Connect</span></a>
+        </nav>
+
+        <!-- .hero-copy : one left-aligned column -->
+        <section class="hero-copy" aria-label="Introduction">
+            <p class="hero-role hero-rise" style="--i:0">AI/ML Engineer | DSA Enthusiast</p>
+
+            <a class="profile-badge hero-rise" style="--i:1" href="#/about" aria-label="About Anshu Priya">
+                <span class="avatar"><img src="images/home/icon.jpg" alt="Anshu Priya" /></span>
+                <span class="name-badge">Anshu Priya</span>
+            </a>
+
+            <p class="hero-intro hero-rise" style="--i:2">Strong in Data Structures &amp; Algorithms, with hands-on Machine Learning and AI/ML
+                projects, from medical imaging to NLP.</p>
+
+            <div class="hero-cta hero-rise" style="--i:3">
+                <a class="pp-btn pp-btn-primary" href="#/connect">Connect With Me</a>
+                <a class="pp-btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+            </div>
+        </section>
+
+        <!-- .hero-stage : cut-out portrait with an arch behind it (parallax target = #hero-img) -->
+        <div class="hero-stage" id="hero-stage">
+            <div class="hero-arch" aria-hidden="true"></div>
+            <img id="hero-img" class="hero-portrait" src="images/home/main-photo.png" alt="Portrait of Anshu Priya" draggable="false" />
+        </div>
+
+        <!-- .home-social -->
+        <p class="home-social">
+            <a class="social-link linkedin" href="https://www.linkedin.com/in/anshu-priya-489ab7261" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"></a>
+            <a class="social-link github" href="https://github.com/anshupriya12" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"></a>
+            <a class="social-link instagram" href="https://www.instagram.com/__mmxyz__/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"></a>
+        </p>
+
+        <!-- .home-footer -->
+        <p class="home-footer">&copy; 2026 Anshu Priya</p>
+
+        <!-- FULL SCREEN TOGGLE -->
+        <div class="full-screen-wrap" role="button" aria-label="Toggle full screen" tabindex="0">
+            <div class="top-left"></div>
+            <div class="top-left-horiz"></div>
+            <div class="top-right"></div>
+            <div class="top-right-horiz"></div>
+            <div class="bottom-left"></div>
+            <div class="bottom-left-horiz"></div>
+            <div class="bottom-right"></div>
+            <div class="bottom-right-horiz"></div>
+        </div>
+
+    </div>
+    <!-- .home-wrap -->
+
+
+    <!-- .one-page-content : section panels are loaded here -->
+    <div class="one-page-content">
+
+        <a href="./" class="close-page" aria-label="Close page">
+            <span class="close-text"></span>
+        </a>
+
+        <div class="content-wrap"></div>
+
+    </div>
+
+    <!-- page transition overlays -->
+    <div class="overlay overlay-1"></div>
+    <div class="overlay overlay-2"></div>
+
+    <!-- SCRIPTS -->
+    <script src="js/tween-max.js"></script>
+    <script src="js/jquery-address.js"></script>
+    <script src="js/nprogress/nprogress.js"></script>
+    <script src="js/jquery-isotope.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/jquery-fitvids.js"></script>
+    <script src="js/jquery.magnific-popup/jquery-magnific-popup.js"></script>
+    <script src="js/jquery-easing.js"></script>
+    <script src="js/jquery-validate.js"></script>
+    <script src="js/resize-sensor.js"></script>
+    <script src="js/jquery-sticky-sidebar.js"></script>
+    <script src="js/main.js?v=20261012"></script>
+    <script src="js/hero-effects.js?v=20261012"></script>
+    <script src="js/mobile-nav.js?v=20261013"></script>
+
+</body>
+
+</html>
